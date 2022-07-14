@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./style.css" rel="stylesheet" />
+    <title>Welcome</title>
+</head>
+
+<body>
+
+    <!-- Pre Loader -->
+    <div class="wrapper">
+        <div class="loader">
+            <h1 class="loading_text">Loading . . .</h1>
+        </div>
+    </div>
+
+    <div class="hero_section">
+        <div class="left">
+            <h2>Hello 👋🏼</h2>
+            <h1>Do You Like Coffee ???</h1>
+            <h3>Yes Or No ?</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus placeat numquam sit quia beatae sint repudiandae eos odit minus doloremque, ipsam eveniet totam animi, voluptatibus adipisci provident autem? Ad, vel!</p>
+            <button>Let's Go !</button>
+        </div>
+        <div class="right">
+            <img src="./assets/coffe.jpg" alt="">
+        </div>
+    </div>
+
+
+
+    <script>
+        const fadeOut = () => {
+            const loaderWrapper = document.querySelector(".wrapper");
+            loaderWrapper.classList.add("fade")
+        }
+
+        window.addEventListener("load", fadeOut);
+    </script>
+</body>
+
+</html>
